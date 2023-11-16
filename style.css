@@ -9,7 +9,20 @@ body {
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
+}
+
+.dark-mode {
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 header {
@@ -50,6 +63,38 @@ button:active {
   font-size: larger;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  text-align: center;
+
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#hero-button-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#hero-button-container button {
+  font-size: x-large;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: larger;
+}
+
 .game-section {
   min-height: 400px;
   width: 100%;
@@ -61,29 +106,38 @@ button:active {
   gap: 10px;
 }
 
+#select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 20px;
+}
+
 .image-container img {
   width: 100%;
   height: 100%;
   object-fit: contain; /* Change to 'cover' if you don't mind cropping */
 }
 
+.name-container {
+  display: flex;
+  gap: 10px;
+}
+
 footer {
-  color: black; /* Choose a color that contrasts well with the background */
   text-align: center; /* Centers the content */
   padding: 20px; /* Adds some space inside the footer */
   margin-top: 20px; /* Ensures there's space between the game sections and the footer */
   border-top: 2px solid aliceblue; /* A border to separate from content */
 }
 
+footer a {
+  text-decoration: none;
+}
+
 footer p {
   margin: 5px 0; /* Adds spacing between each paragraph */
 }
-
-footer a {
-  color: darkblue; /* Hyperlink color */
-  text-decoration: none; /* Removes underline from links */
-}
-
-footer a:hover {
-  text-decoration: underline; /* Adds underline on hover for better UX */
+.dark-mode footer a {
+  color: white;
 }

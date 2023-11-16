@@ -14,13 +14,21 @@
   </head>
   <body>
     <header>
-      <div><i class="fa-solid fa-bars"></i></div>
-      <div id="header-title">My JS Games</div>
+      <div id="header-title">MyJSGames</div>
       <button id="dark-button">
         <i class="fa-solid fa-circle-half-stroke"></i>
         Dark Mode
       </button>
     </header>
+    <main>
+      <section class="hero">
+          <h1>Welcome to My JS Games — Your New Digital Playground</h1>
+          <p>Explore a world of fun and interactive JavaScript games! Created by Trevor Brown, a junior web dev, this is a demo of several simples games I created using vanilla JS.</p>
+          <div id="hero-button-container">
+            <button>About</button>  <button>Let's Play!</button>
+          </div>
+      </section>
+
     <div id="select-container">
       <h3>Select Your Game</h3>
       <button id="select-tic">Tic Tac Toe</button>
@@ -33,12 +41,17 @@
         Rules: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <button class="play">Play Now</button>
+      <button id="play-tic" class="play">Play Now</button>
       <button class="back">Back</button>
-
-      <div class="image-container">
+      <div class="name-container">
+        <input placeholder="Enter Name" id="name-input"><button>Enter</button>
+      </div>
+      <div id="tic-image" class="image-container">
         <img src="https://placehold.co/30x30" alt="Placeholder Image" />
       </div>
+      <div id="tic-turn"></div>
+      <div id="tic-board"></div>
+      <div id="tic-winner"></div>
     </section>
     <section class="game-section" id="connect-section">
       <h2>Connect Four</h2>
@@ -48,7 +61,6 @@
       </p>
       <button class="play">Play Now</button>
       <button class="back">Back</button>
-
       <div class="image-container">
         <img src="https://placehold.co/30x30" alt="Placeholder Image" />
     </section>
@@ -64,6 +76,7 @@
       <div class="image-container">
         <img src="https://placehold.co/30x30" alt="Placeholder Image" />
     </section>
+  </main>
     <footer>
       <p>&copy; 2023 JS Games Suite</p>
       <p>Created by Trevor Brown</p>
@@ -71,8 +84,13 @@
         Contact Me:
         <a href="mailto:trevorbrown.web@gmail.com">trevorbrown.web@gmail.com</a>
       </p>
+
     </footer>
 
     <script src="script.js"></script>
+    <script src="./components/tic.js"></script>
+
+
+
   </body>
 </html>
