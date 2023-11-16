@@ -55,7 +55,8 @@ button:active {
   width: 100%;
   border: black solid 2px;
   padding: 5px;
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   gap: 10px;
 }
