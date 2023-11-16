@@ -14,6 +14,7 @@ const rockSection = document.getElementById("rock-section");
 const playButton = document.getElementsByClassName("play");
 const backButton = document.querySelectorAll(".back");
 const selectContainer = document.getElementById("select-container");
+const randomGame = document.getElementById("random-game");
 
 // helper functions
 
@@ -33,6 +34,8 @@ function showRock() {
 
 function goBack(e) {
   // This will find the closest parent with the class 'game-section' and hide it
+  selectContainer.style.display = "flex";
+
   e.target.closest(".game-section").style.display = "none";
 }
 
@@ -43,6 +46,22 @@ function darkMode() {
   darkModeButton.innerHTML = isDarkMode
     ? '<i class="fa-solid fa-sun"></i> Light Mode'
     : '<i class="fa-solid fa-circle-half-stroke"></i> Dark Mode';
+}
+
+function clickRandom() {
+  ticSection.style.display = "none";
+  connectSection.style.display = "none";
+  rockSection.style.display = "none";
+
+  let randomNumber = Math.floor(Math.random() * 3);
+  console.log("rando", randomNumber);
+  if (randomNumber === 0) {
+    showTic();
+  } else if (randomNumber === 1) {
+    showConnect();
+  } else {
+    showRock();
+  }
 }
 
 // event listeners
@@ -56,3 +75,5 @@ backButton.forEach((backButton) => {
 });
 
 darkModeButton.addEventListener("click", darkMode);
+
+randomGame.addEventListener("click", clickRandom);
