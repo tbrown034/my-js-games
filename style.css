@@ -18,13 +18,13 @@ header {
 }
 
 button {
-  background-color: lightblue;
+  background-color: rgb(239, 245, 248);
   border-radius: 10px;
   padding: 5px;
 }
 
 button:hover {
-  background-color: rgb(109, 157, 174);
+  background-color: rgb(209, 213, 215);
 }
 
 button:active {
@@ -51,14 +51,22 @@ button:active {
 }
 
 .game-section {
-  height: 800px;
+  min-height: 400px;
   width: 100%;
   border: black solid 2px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Change to 'cover' if you don't mind cropping */
 }
 
 footer {
-  background-color: lightblue; /* Matches the button color */
   color: black; /* Choose a color that contrasts well with the background */
   text-align: center; /* Centers the content */
   padding: 20px; /* Adds some space inside the footer */
