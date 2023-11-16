@@ -5,16 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Games Suite</title>
+    <script
+      src="https://kit.fontawesome.com/e21de648c7.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>JS Games</h1>
+    <header>
+      <div><i class="fa-solid fa-bars"></i></div>
+      <div id="header-title">My JS Games</div>
+      <button id="dark-button">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+        Dark Mode
+      </button>
+    </header>
     <div id="select-container">
-      Select Game
+      <h3>Select Your Game</h3>
       <button>Tic Tac Toe</button>
       <button>Connect Four</button>
       <button>Rock Paper Scissors</button>
     </div>
+    <section class="game-section" id="tic-section">
+      <h2>Tic Tac Toe</h2>
+    </section>
+    <section class="game-section" id="connect-section">
+      <h2>Connect Four</h2>
+    </section>
+    <section class="game-section" id="rock-section">
+      <h2>Rock Paper Scissors</h2>
+    </section>
+    <footer>
+      <p>&copy; 2023 JS Games Suite</p>
+      <p>Created by Trevor Brown</p>
+      <p>
+        Contact Me:
+        <a href="mailto:trevorbrown.web@gmail.com">trevorbrown.web@gmail.com</a>
+      </p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
